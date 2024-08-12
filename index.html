@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Age Calculator</title>
+  <style>
+    body{
+  width:100vw;
+  background-color:#CFD3D0;
+}
+
+.container{
+  width: 80%;
+  background-color:#FFFFFF;
+  border-radius:15px;
+  border-bottom-right-radius:30%;
+  margin-inline: auto;
+}
+
+button{
+  background-color:#A8AFFF;
+  width:50px;
+  height:50px;
+  text-align: center;
+  border-radius:50%;
+  position:relative;
+  left:300px;
+  top:50px;
+  color: white;
+  outline:none;
+  border:none;
+}
+
+
+/*.fa{
+  margin-top:18px;
+}*/
+
+
+.form-container{
+  border: 2px solid black;
+  border-inline: none;
+  border-top: none;
+  padding:20px;
+}
+
+.flex-container{
+  width:100%;
+  display: flex;
+}
+
+.day,.month,.year{
+  display: flex;
+  flex-direction: column;
+}
+
+.month{
+  margin-inline:15px;
+}
+
+p{
+  font-size: 4rem;
+}
+
+b{
+  color:#7B34AB;
+}
+
+input{
+  border-radius:10px;
+  height:30px;
+} 
+
+@media screen and (max-width:500px){
+  body{
+    width:100vw;
+    background-color:#E9FFE1;
+    padding:50px;
+  }
+  
+  .container{
+    width:80%;
+    background-color:#9DDAD1;
+    color:white;
+    padding-bottom: 5px;
+  }
+  
+  .form-container{
+    border:2px solid white;
+    padding:10px;
+  }
+  
+  .flex-container{
+    width:100%;
+    display: block;
+    margin:0;
+  }
+  
+  .day,.month,.year{
+  }
+  
+  .month{
+    margin: 10px auto;
+  }
+  
+  p{
+    font-size: 2rem;
+    margin-left: 80px;
+  }
+  
+  b{
+    color:#C0A4FE;
+  }
+  
+  input{
+    height:35px;
+  }
+  
+  button{
+    left:220px;
+  }
+}
+
+  </style>
+<!--  <link rel="stylesheet" href="/Age Calculator/Index.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+      <div class="form-container">
+     <form 
+    action="mailto:goodluckreuben96@gmail.com" method="post" enctype="text/plain">
+        <div class="flex-container">
+          <div class="day">
+            <label for="Day">Day</label>
+            <input type="number" name="Day" id="Day" value"Day" placeholder="DD" required>
+          </div>
+          <div class="month">
+            <label for="Month">Month</label>
+             <input type="number" name="Month" id="Month" value="Month" placeholder="MM" required>
+          </div>
+          <div class="year">
+            <label for="Year">Year</label>
+             <input type="number" value="year" name="Year" id="Year" placeholder="YYYY">
+            <button>
+               <i class="fa fa-arrow-down" aria-hidden="true"></i>
+             </button>
+          </div>
+        </div>
+      </form>
+     </div>
+      <p><b>- -</b> years</p>
+      <p><b>- -</b> months</p>
+      <p><b>- -</b> days</p>
+    </div>
+</body>
+
+</html>

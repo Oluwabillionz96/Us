@@ -8,7 +8,7 @@
   <style>
     body{
   width:100vw;
-  background-color:#CFD3D0;
+  background-color:#F0F0F0;
 }
 
 .container{
@@ -137,15 +137,15 @@ input{
         <div class="flex-container">
           <div class="day">
             <label for="Day">Day</label>
-            <input type="number" name="Day" id="Day" value"Day" placeholder="DD" required>
+            <input type="number" name="Day" id="Day" value"Day" placeholder="DD" required min="1" max="31">
           </div>
           <div class="month">
             <label for="Month">Month</label>
-             <input type="number" name="Month" id="Month" value="Month" placeholder="MM" required>
+             <input type="number" name="Month" id="Month" value="Month" placeholder="MM" required min="1" max="12">
           </div>
           <div class="year">
             <label for="Year">Year</label>
-             <input type="number" value="year" name="Year" id="Year" placeholder="YYYY">
+             <input type="number" value="year" name="Year" id="Year" placeholder="YYYY" min="1924" required>
             <button>
                <i class="fa fa-arrow-down" aria-hidden="true"></i>
              </button>
